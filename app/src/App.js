@@ -22,15 +22,15 @@ let colorTheme = createTheme({
 
 let theme = createTheme(colorTheme, {
   typography: {
-    fontFamily: ["Montserrat"],
+    fontFamily: ["'Poppins'", "Montserrat", "sans-serif"].join(","),
     h1: {
       color: colorTheme.palette.primary.main,
-      fontSize: "5rem",
+      fontSize: "4.8rem",
       fontWeight: "800",
     },
     h2: {
       color: colorTheme.palette.primary.main,
-      fontSize: "2.4rem",
+      fontSize: "2.2rem",
     },
     h4: {
       color: colorTheme.palette.primary.main,
