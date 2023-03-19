@@ -1,9 +1,9 @@
-import { Container } from "@mui/system";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { Button } from "@mui/material";
 
 export default function Hero() {
   const theme = useTheme();
@@ -14,6 +14,13 @@ export default function Hero() {
       <Typography variant="h4">Hello!</Typography>
       <Typography variant="h1">I'm Kailey</Typography>
       <Typography variant="h2">Frontend Engineer</Typography>
+      <Button
+        variant="contained"
+        sx={{ maxWidth: isSmallScreen ? "70%" : "50%" }}
+        onClick={() => (window.location = "mailto:kaileynwaal@gmail.com")}
+      >
+        Contact Me
+      </Button>
     </>
   );
 
