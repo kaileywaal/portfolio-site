@@ -6,6 +6,7 @@ import {
   responsiveFontSizes,
   ThemeProvider,
 } from "@mui/material/styles";
+import Projects from "./components/projects/Projects";
 
 let colorTheme = createTheme({
   palette: {
@@ -28,12 +29,12 @@ let theme = createTheme(colorTheme, {
     fontFamily: ["'Poppins'", "Montserrat", "sans-serif"].join(","),
     h1: {
       color: colorTheme.palette.primary.dark,
-      fontSize: "5.4rem",
+      fontSize: "4.8rem",
       fontWeight: "800",
     },
     h2: {
       color: colorTheme.palette.primary.dark,
-      fontSize: "2.4rem",
+      fontSize: "2rem",
     },
     h3: {
       color: colorTheme.palette.primary.dark,
@@ -42,6 +43,7 @@ let theme = createTheme(colorTheme, {
     },
     h4: {
       color: colorTheme.palette.primary.dark,
+      fontSize: "1.6rem",
       fontWeight: "200",
     },
     body1: {
@@ -57,11 +59,32 @@ let theme = createTheme(colorTheme, {
       styleOverrides: {
         root: {
           borderRadius: "40px",
-          marginTop: "1rem",
-          color: colorTheme.palette.primary.light,
-          padding: "6px 12px",
-          fontSize: "1rem",
+          padding: "8px 1.4rem",
+          fontSize: "0.8rem",
           fontFamily: "Montserrat",
+        },
+        contained: {
+          color: colorTheme.palette.primary.light,
+        },
+        outlined: {
+          border: "2px solid",
+          "&:hover": {
+            border: "2px solid",
+            backgroundColor: colorTheme.palette.primary.main,
+            color: colorTheme.palette.secondary.light,
+          },
+        },
+      },
+    },
+    MuiChip: {
+      styleOverrides: {
+        root: {
+          color: colorTheme.palette.primary.dark,
+          border: `1px solid ${colorTheme.palette.primary.dark}`,
+        },
+        contained: {
+          color: colorTheme.palette.secondary.light,
+          backgroundColor: colorTheme.palette.primary.dark,
         },
       },
     },
@@ -73,8 +96,9 @@ theme = responsiveFontSizes(theme);
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Hero></Hero>
+      <Hero />
       <SkillsList />
+      <Projects />
     </ThemeProvider>
   );
 }

@@ -16,7 +16,7 @@ export default function Hero() {
       <Typography variant="h2">Frontend Engineer</Typography>
       <Button
         variant="contained"
-        sx={{ maxWidth: isSmallScreen ? "70%" : "50%" }}
+        sx={{ maxWidth: isSmallScreen ? "80%" : "50%", mt: 2 }}
         onClick={() => (window.location = "mailto:kaileynwaal@gmail.com")}
       >
         Contact Me
@@ -80,7 +80,7 @@ export default function Hero() {
               lg={6}
               xl={6}
               sx={{
-                px: "5vw",
+                px: "10vw",
                 display: "flex",
                 justifyContent: "flex-end",
                 alignItems: "flex-end",
