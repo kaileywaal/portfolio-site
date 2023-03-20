@@ -8,6 +8,12 @@ export const projectsList = [
     ],
     description:
       "Volunteer website redesign for Faith Family Empowerment Center.",
-    image: "src/assets/ffec-phone-screen-recording.gif",
+    image: (
+      <img
+        src={require("../../src/assets/ffec-preview.gif")}
+        alt="Screen recording of the mobile-optimized site"
+        height="100%"
+      />
+    ),
   },
 ];

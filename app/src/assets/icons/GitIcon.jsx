@@ -1,7 +1,7 @@
 import React from "react";
 import { useTheme } from "@mui/material/styles";
 
-export default function GitIcon({ size = 50 }) {
+export default function GitIcon({ size = 30 }) {
   const theme = useTheme();
   return (
     <svg

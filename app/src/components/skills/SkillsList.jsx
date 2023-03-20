@@ -21,18 +21,14 @@ export default function SkillsList() {
     { icon: <HtmlIcon />, label: "HTML" },
     { icon: <CssIcon />, label: "CSS" },
     { icon: <JavaScriptIcon />, label: "JavaScript" },
-    { icon: <VueIcon />, label: "Vue.js" },
     { icon: <MaterialUiIcon />, label: "Material UI (MUI)" },
-    { icon: <GitIcon />, label: "Git Version Control" },
   ];
 
   return (
-    <Box sx={{ backgroundColor: theme.palette.secondary.light, p: 10 }}>
+    <Box sx={{ backgroundColor: theme.palette.secondary.light, py: 8 }}>
       <Container>
-        <Typography variant="h2">Languages, Frameworks, and Tools</Typography>
         <Box
           sx={{
-            pt: 4,
             display: "flex",
             flexWrap: "wrap",
             gap: "20px",

@@ -10,7 +10,13 @@ import {
 import { useTheme } from "@mui/system";
 import "../../assets/ffec-screen-recording.gif";
 
-export default function Project({ title, description, links, languages }) {
+export default function Project({
+  title,
+  description,
+  links,
+  languages,
+  image,
+}) {
   const theme = useTheme();
 
   return (
@@ -35,11 +41,7 @@ export default function Project({ title, description, links, languages }) {
               textAlign: "center",
             }}
           >
-            <img
-              src={require("../../assets/ffec-phone-screen-recording.gif")}
-              alt="Screen recording of the mobile-optimized site"
-              height="100%"
-            />
+            {image}
           </Grid>
 
           <Grid item xs={8} sm={8} md={8} lg={8} xl={8} sx={{ pr: 2 }}>
@@ -49,7 +51,7 @@ export default function Project({ title, description, links, languages }) {
             <Typography variant="body1">{description}</Typography>
             <Stack direction="row" spacing={1} sx={{ pt: 3 }}>
               {languages.map((language) => (
-                <Chip label={language} variant="outlined" size="small" />
+                <Chip label={language} variant="contained" size="small" />
               ))}
             </Stack>
 

@@ -11,15 +11,14 @@ import Projects from "./components/projects/Projects";
 let colorTheme = createTheme({
   palette: {
     primary: {
-      light: "#f2eae1",
-      dark: "#574d1f",
-      main: "#b6a030",
-      secondary: "#f0dabc",
+      light: "#FAF9FF",
+      main: "#199BD3",
+      dark: "#201E3A",
     },
     secondary: {
-      light: "#d3dbde",
-      main: "#e2b1ad",
-      dark: "#c76333",
+      light: "#FFFFFF",
+      main: "#F8476F",
+      dark: "#392F5A",
     },
   },
 });
@@ -42,7 +41,7 @@ let theme = createTheme(colorTheme, {
       fontWeigth: "200",
     },
     h4: {
-      color: colorTheme.palette.primary.dark,
+      color: colorTheme.palette.primary.main,
       fontSize: "1.6rem",
       fontWeight: "200",
     },
@@ -83,8 +82,9 @@ let theme = createTheme(colorTheme, {
           border: `1px solid ${colorTheme.palette.primary.dark}`,
         },
         contained: {
-          color: colorTheme.palette.secondary.light,
-          backgroundColor: colorTheme.palette.primary.dark,
+          backgroundColor: "hsla(346, 93%, 63%, 0.1)",
+          color: colorTheme.palette.secondary.main,
+          border: "none",
         },
       },
     },
