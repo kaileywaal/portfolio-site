@@ -32,15 +32,20 @@ export const projectsList = [
     ),
   },
   {
-    title: "Faith Family Empowerment Center",
-    languages: ["HTML", "CSS", "JavaScript"],
-    links: [{ label: "view site", link: "https://ffec.github.io/ffec-site/" }],
+    title: "IP Address Tracker Hub",
+    languages: ["HTML", "CSS", "JavaScript", "RESTful API"],
+    links: [
+      {
+        label: "view site",
+        link: "https://kaileywaal.github.io/ip-address-tracker-hub/",
+      },
+    ],
     description:
-      "Volunteer website redesign for Faith Family Empowerment Center.",
+      "Figure out all the dirty details that you need to know based on an IP address or domain. You can see your IP address and location on a map when the page loads (you know, in case you forget where you are) or stalk a company and figure out super interesting information about them like, um, their IP address.",
     image: (
       <img
-        src={require("../../src/assets/ffec-preview.gif")}
-        alt="Screen recording of the mobile-optimized site"
+        src={require("../../src/assets/ip-address-tracker-preview.png")}
+        alt="Screenshots of site displayed on phone, tablet, and laptop"
         height="100%"
       />
     ),

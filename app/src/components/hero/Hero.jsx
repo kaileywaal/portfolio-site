@@ -16,7 +16,7 @@ export default function Hero() {
       <Typography variant="h2">Frontend Engineer</Typography>
       <Button
         variant="contained"
-        sx={{ maxWidth: isSmallScreen ? "80%" : "50%", mt: 2 }}
+        sx={{ maxWidth: "200px", mt: 2 }}
         onClick={() => (window.location = "mailto:kaileynwaal@gmail.com")}
       >
         Contact Me
@@ -40,7 +40,7 @@ export default function Hero() {
           display: "flex",
           justifyContent: "center",
           alignContent: "center",
-          height: isVerySmallScreen ? "40vh" : isSmallScreen ? "60vh" : "80vh",
+          height: "80vh",
           width: "100vw",
           backgroundColor: theme.palette.primary.light,
           m: 0,
@@ -58,7 +58,7 @@ export default function Hero() {
           <>
             <Grid
               item
-              xs={6}
+              xs={12}
               sm={6}
               md={6}
               lg={6}
@@ -72,23 +72,26 @@ export default function Hero() {
             >
               <IntroText />
             </Grid>
-            <Grid
-              item
-              xs={6}
-              sm={6}
-              md={6}
-              lg={6}
-              xl={6}
-              sx={{
-                px: "10vw",
-                display: "flex",
-                justifyContent: "flex-end",
-                alignItems: "flex-end",
-                flexDirection: "column",
-              }}
-            >
-              <HeadshotImage />
-            </Grid>
+            {!isVerySmallScreen ? (
+              <Grid
+                item
+                sm={6}
+                md={6}
+                lg={6}
+                xl={6}
+                sx={{
+                  px: "10vw",
+                  display: "flex",
+                  justifyContent: "flex-end",
+                  alignItems: "flex-end",
+                  flexDirection: "column",
+                }}
+              >
+                <HeadshotImage />
+              </Grid>
+            ) : (
+              ""
+            )}
           </>
         </Grid>
       </Box>
