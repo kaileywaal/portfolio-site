@@ -1,21 +1,24 @@
 import React from "react";
 import Project from "./Project";
+import { Grid } from "@mui/material";
 import { projectsList } from "../../data/projects";
 
 export default function Projects() {
   return (
-    <>
-      {projectsList.map((project) => {
+    <Grid container spacing={6} sx={{ p: 6 }}>
+      {projectsList.map((project, index) => {
         return (
-          <Project
-            title={project.title}
-            languages={project.languages}
-            links={project.links}
-            description={project.description}
-            image={project.image}
-          />
+          <Grid item xs={12} sm={12} md={12} lg={6} xl={6} key={index}>
+            <Project
+              title={project.title}
+              languages={project.languages}
+              links={project.links}
+              description={project.description}
+              image={project.image}
+            />
+          </Grid>
         );
       })}
-    </>
+    </Grid>
   );
 }
