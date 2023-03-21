@@ -7,8 +7,6 @@ import {
   Grid,
   Paper,
 } from "@mui/material";
-import "../../assets/ffec-screen-recording.gif";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 
 export default function Project({
