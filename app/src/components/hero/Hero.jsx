@@ -4,16 +4,85 @@ import Grid from "@mui/material/Grid";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Button } from "@mui/material";
+import { useCallback } from "react";
+import Particles from "react-particles";
+import { loadFull } from "tsparticles";
+import "./hero.css";
 
 export default function Hero() {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
   const isVerySmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const particlesInit = useCallback(async (engine) => {
+    console.log(engine);
+    await loadFull(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async (container) => {
+    await console.log(container);
+  }, []);
+
+  const particlesOptions = {
+    fullScreen: { enable: false, zIndex: 0 },
+    fpsLimit: 120,
+    particles: {
+      color: {
+        value: [
+          theme.palette.secondary.main,
+          theme.palette.primary.main,
+          theme.palette.secondary.dark,
+        ],
+      },
+      collisions: {
+        enable: true,
+      },
+      move: {
+        direction: "none",
+        enable: true,
+        outModes: {
+          default: "bounce",
+        },
+        random: false,
+        speed: 3,
+        straight: false,
+      },
+      number: {
+        density: {
+          enable: true,
+          area: 800,
+        },
+        value: 14,
+      },
+      shape: {
+        type: "images",
+        image: [
+          {
+            src: require("./shapes/shape4-svgrepo-com.png"),
+            height: 20,
+            width: 20,
+          },
+          { src: require("./shapes/shape-2.svg"), height: 20, width: 20 },
+        ],
+      },
+      size: {
+        value: 10,
+      },
+    },
+    detectRetina: true,
+  };
+
   const IntroText = () => (
     <>
-      <Typography variant="h4">Hello!</Typography>
-      <Typography variant="h1">I'm Kailey</Typography>
-      <Typography variant="h2">Frontend Engineer</Typography>
+      <Typography variant="h4" sx={{ zIndex: 1 }}>
+        Hello!
+      </Typography>
+      <Typography variant="h1" sx={{ zIndex: 1 }}>
+        I'm Kailey
+      </Typography>
+      <Typography variant="h2" sx={{ zIndex: 1 }}>
+        Frontend Engineer
+      </Typography>
       <Button
         variant="contained"
         sx={{ maxWidth: "200px", mt: 2 }}
@@ -29,12 +98,18 @@ export default function Hero() {
       src={require("../../assets/me.png")}
       alt="professional headshot of Kailey Waal"
       width="100%"
-      style={{ maxWidth: "450px" }}
+      style={{ maxWidth: "450px", zIndex: 1 }}
     />
   );
 
   return (
     <>
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={particlesOptions}
+      />
       <Box
         sx={{
           display: "flex",
