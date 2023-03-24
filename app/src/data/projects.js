@@ -4,7 +4,7 @@ export const projectsList = [
     languages: ["HTML", "CSS", "JavaScript"],
     links: [{ label: "view site", link: "https://ffec.github.io/ffec-site/" }],
     description:
-      "Volunteer website redesign for Faith Family Empowerment Center.",
+      "Faith Family Empowerment Center is a nonprofit that had a website in need of a little facelift... or an entire overhaul. We sent their old, desktop-only site to the grave and replaced it with a fully responsive site that looks great on any device.",
     image: (
       <img
         src={require("../../src/assets/ffec-preview.gif")}
@@ -15,14 +15,15 @@ export const projectsList = [
   },
   {
     title: "Virtual Stock Market Game",
-    languages: ["Vue.js", "Java", "PostgreSQL"],
+    languages: ["Vue.js", "ECharts Library", "Java", "PostgreSQL"],
     links: [
       {
         label: "view demo",
         link: "https://drive.google.com/file/d/1vrwgRWeV6iMRiGs8Cm8LpgpCe2_BmE2Z/view",
       },
     ],
-    description: "Final Capstone project at Tech Elevator.",
+    description:
+      "Compete with your friends to see who can make the most money in the stock market (without any risk of actually losing money in the stock market). Complete with real-time stock data and fun graphs to display progress.",
     image: (
       <img
         src={require("../../src/assets/virtual-stock-market-preview.gif")}

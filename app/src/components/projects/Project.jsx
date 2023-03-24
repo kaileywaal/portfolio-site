@@ -38,12 +38,12 @@ export default function Project({
         <Grid
           item
           xs={12}
-          sm={4}
-          md={4}
-          lg={4}
-          xl={4}
+          sm={5}
+          md={5}
+          lg={5}
+          xl={6}
           sx={{
-            height: "200px",
+            height: "150px",
             width: "50%",
             textAlign: "center",
           }}
@@ -51,7 +51,7 @@ export default function Project({
           {image}
         </Grid>
 
-        <Grid item xs={12} sm={8} md={8} lg={8} xl={8}>
+        <Grid item xs={12} sm={7} md={7} lg={7} xl={6}>
           <Stack direction="row" spacing={1} sx={{ py: 1.5 }}>
             {languages.map((language) => (
               <Chip label={language} variant="contained" size="small" />
