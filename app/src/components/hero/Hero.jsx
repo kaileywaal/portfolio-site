@@ -27,13 +27,6 @@ export default function Hero() {
     fullScreen: { enable: false, zIndex: 0 },
     fpsLimit: 120,
     particles: {
-      color: {
-        value: [
-          theme.palette.secondary.main,
-          theme.palette.primary.main,
-          theme.palette.secondary.dark,
-        ],
-      },
       collisions: {
         enable: true,
       },
@@ -44,16 +37,19 @@ export default function Hero() {
           default: "bounce",
         },
         random: false,
-        speed: 3,
+        speed: 1,
         straight: false,
       },
       number: {
-        density: {
-          enable: true,
-          area: 800,
-        },
         value: 14,
       },
+      rotate: {
+        animation: {
+          enable: true,
+          speed: { min: 5, max: 10 },
+        },
+      },
+      reduceDuplicates: true,
       shape: {
         type: "images",
         image: [
@@ -62,11 +58,50 @@ export default function Hero() {
             height: 20,
             width: 20,
           },
-          { src: require("./shapes/shape-2.svg"), height: 20, width: 20 },
+          {
+            src: require("./shapes/shape12-svgrepo-com.png"),
+            height: 20,
+            width: 20,
+          },
+          {
+            src: require("./shapes/flower5-svgrepo-com.png"),
+            height: 20,
+            width: 20,
+          },
+          {
+            src: require("./shapes/shape11-svgrepo-com.png"),
+            height: 20,
+            width: 20,
+          },
+          {
+            src: require("./shapes/shape10-svgrepo-com.png"),
+            height: 20,
+            width: 20,
+          },
+          {
+            src: require("./shapes/shape1-svgrepo-com.png"),
+            height: 20,
+            width: 20,
+          },
+          {
+            src: require("./shapes/shape3-svgrepo-com.png"),
+            height: 20,
+            width: 20,
+          },
+          {
+            src: require("./shapes/shape9-svgrepo-com.png"),
+            height: 20,
+            width: 20,
+          },
+          {
+            src: require("./shapes/shape6-svgrepo-com.png"),
+            height: 20,
+            width: 20,
+          },
         ],
       },
       size: {
-        value: 10,
+        value: { min: 10, max: 20 },
       },
     },
     detectRetina: true,
