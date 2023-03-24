@@ -39,7 +39,7 @@ export default function SkillsList() {
         autoPlay
         autoPlayInterval={100}
         animationDuration={2000}
-        touchTracking={false}
+        touchTracking={true}
         disableDotsControls
         disableButtonsControls
         items={items}
@@ -47,7 +47,7 @@ export default function SkillsList() {
         transitionTimingFunction="ease-in-and-out"
         responsive={{
           0: {
-            items: 5,
+            items: 3,
           },
           800: {
             items: 7,

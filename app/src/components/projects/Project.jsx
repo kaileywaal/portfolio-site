@@ -52,9 +52,14 @@ export default function Project({
         </Grid>
 
         <Grid item xs={12} sm={7} md={7} lg={7} xl={6}>
-          <Stack direction="row" spacing={1} sx={{ py: 1.5 }}>
+          <Stack direction="row" sx={{ display: "flex", flexWrap: "wrap" }}>
             {languages.map((language) => (
-              <Chip label={language} variant="contained" size="small" />
+              <Chip
+                sx={{ mr: 1, my: { xs: 0.75, md: 1 } }}
+                label={language}
+                variant="contained"
+                size="small"
+              />
             ))}
           </Stack>
           <Typography variant="h5" sx={{ pb: 0.3 }}>

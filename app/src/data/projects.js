@@ -51,4 +51,24 @@ export const projectsList = [
       />
     ),
   },
+  {
+    title: "Portfolio Site Version 1.0",
+    languages: ["HTML", "CSS", "JavaScript"],
+    links: [
+      {
+        label: "view site",
+        //TODO
+        link: "https://kaileywaal.com",
+      },
+    ],
+    description:
+      "My first ever portfolio site. Admittedly pretty text-heavy, but it deserves a spot because it's cute.",
+    image: (
+      <img
+        src={require("../../src/assets/portfolio-site-preview.gif")}
+        alt="A screenshot and video of site displayed on phone and laptop"
+        height="100%"
+      />
+    ),
+  },
 ];

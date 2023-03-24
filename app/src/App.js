@@ -60,7 +60,6 @@ let theme = createTheme(colorTheme, {
           borderRadius: "40px",
           padding: "8px 1.4rem",
           fontSize: "0.8rem",
-          fontFamily: "Montserrat",
         },
         contained: {
           color: colorTheme.palette.primary.light,

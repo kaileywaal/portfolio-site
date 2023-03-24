@@ -5,7 +5,7 @@ import { projectsList } from "../../data/projects";
 
 export default function Projects() {
   return (
-    <Grid container spacing={6} sx={{ p: 6 }}>
+    <Grid container spacing={6} sx={{ p: { xs: 3, md: 6 } }}>
       {projectsList.map((project, index) => {
         return (
           <Grid item xs={12} sm={12} md={12} lg={6} xl={6} key={index}>

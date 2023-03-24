@@ -37,7 +37,7 @@ export default function Hero() {
           default: "bounce",
         },
         random: false,
-        speed: 1,
+        speed: 1.5,
         straight: false,
       },
       number: {
