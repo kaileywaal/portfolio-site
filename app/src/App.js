@@ -7,6 +7,7 @@ import {
   ThemeProvider,
 } from "@mui/material/styles";
 import Projects from "./components/projects/Projects";
+import About from "./components/about/About";
 
 let colorTheme = createTheme({
   palette: {
@@ -25,32 +26,48 @@ let colorTheme = createTheme({
 
 let theme = createTheme(colorTheme, {
   typography: {
-    fontFamily: ["'Poppins'", "Montserrat", "sans-serif"].join(","),
+    fontFamily: ["Poppins", "sans-serif"].join(","),
     h1: {
       color: colorTheme.palette.primary.dark,
       fontSize: "4.8rem",
       fontWeight: "800",
+      fontFamily: ["Poppins", "sans-serif"].join(","),
     },
     h2: {
       color: colorTheme.palette.primary.dark,
       fontSize: "2rem",
+      fontWeight: "300",
+      fontFamily: ["Poppins", "sans-serif"].join(","),
     },
     h3: {
       color: colorTheme.palette.primary.dark,
       fontSize: "2rem",
-      fontWeigth: "200",
+      fontWeight: "400",
+      fontFamily: ["Poppins", "sans-serif"].join(","),
     },
     h4: {
       color: colorTheme.palette.primary.main,
       fontSize: "1.6rem",
-      fontWeight: "200",
+      fontWeight: "500",
+      fontFamily: ["Poppins", "sans-serif"].join(","),
+    },
+    h5: {
+      color: colorTheme.palette.primary.main,
+      fontFamily: ["Poppins", "sans-serif"].join(","),
+      fontSize: "1.4rem",
+    },
+    h6: {
+      color: colorTheme.palette.secondary.dark,
+      fontFamily: ["Poppins", "sans-serif"].join(","),
     },
     body1: {
       color: colorTheme.palette.primary.dark,
+      fontFamily: ["Poppins", "sans-serif"].join(","),
     },
     caption: {
       color: colorTheme.palette.primary.dark,
       fontSize: "1rem",
+      fontFamily: ["Poppins", "sans-serif"].join(","),
     },
   },
   components: {
@@ -60,6 +77,7 @@ let theme = createTheme(colorTheme, {
           borderRadius: "40px",
           padding: "8px 1.4rem",
           fontSize: "0.8rem",
+          fontFamily: ["Poppins", "sans-serif"].join(","),
         },
         contained: {
           color: colorTheme.palette.primary.light,
@@ -96,6 +114,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Hero />
+      <About />
       <SkillsList />
       <Projects />
     </ThemeProvider>

@@ -7,7 +7,7 @@ export const projectsList = [
       "Faith Family Empowerment Center is a nonprofit that had a website in need of a little facelift... or an entire overhaul. We sent their old, desktop-only site to the grave and replaced it with a fully responsive site that looks great on any device.",
     image: (
       <img
-        src={require("../../src/assets/ffec-preview.gif")}
+        src={require("../../src/assets/previewImages/ffec-preview.gif")}
         alt="Screen recording of the mobile-optimized site"
         height="100%"
       />
@@ -26,7 +26,7 @@ export const projectsList = [
       "Compete with your friends to see who can make the most money in the stock market (without any risk of actually losing money in the stock market). Complete with real-time stock data and fun graphs to display progress.",
     image: (
       <img
-        src={require("../../src/assets/virtual-stock-market-preview.gif")}
+        src={require("../../src/assets/previewImages/virtual-stock-market-preview.gif")}
         alt="Screenshots of various components found in virutual stock market game."
         height="100%"
       />
@@ -45,7 +45,7 @@ export const projectsList = [
       "Figure out all the dirty details that you need to know based on an IP address or domain. You can see your IP address and location on a map when the page loads (you know, in case you forget where you are) or stalk a company and figure out super interesting information about them like, um, their IP address.",
     image: (
       <img
-        src={require("../../src/assets/ip-address-tracker-preview.png")}
+        src={require("../../src/assets/previewImages/ip-address-tracker-preview.png")}
         alt="Screenshots of site displayed on phone, tablet, and laptop"
         height="100%"
       />
@@ -62,10 +62,10 @@ export const projectsList = [
       },
     ],
     description:
-      "My first ever portfolio site. Admittedly pretty text-heavy, but it deserves a spot because it's cute.",
+      "My first ever portfolio site. Admittedly pretty text-heavy, but it deserves a spot because it's cute (and also because I worked very hard to get that light mode toggle working with Vanilla JavaScript. I mean, look at it!).",
     image: (
       <img
-        src={require("../../src/assets/portfolio-site-preview.gif")}
+        src={require("../../src/assets/previewImages/portfolio-site-preview.gif")}
         alt="A screenshot and video of site displayed on phone and laptop"
         height="100%"
       />

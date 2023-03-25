@@ -2,7 +2,6 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { Button } from "@mui/material";
 import { useCallback } from "react";
 import Particles from "react-particles";
@@ -11,8 +10,6 @@ import "./hero.css";
 
 export default function Hero() {
   const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
-  const isVerySmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
@@ -37,7 +34,7 @@ export default function Hero() {
           default: "bounce",
         },
         random: false,
-        speed: 1.5,
+        speed: 2,
         straight: false,
       },
       number: {
@@ -46,7 +43,7 @@ export default function Hero() {
       rotate: {
         animation: {
           enable: true,
-          speed: { min: 5, max: 10 },
+          speed: { min: 1, max: 8 },
         },
       },
       reduceDuplicates: true,
@@ -150,7 +147,7 @@ export default function Hero() {
           display: "flex",
           justifyContent: "center",
           alignContent: "center",
-          height: "80vh",
+          height: { xs: "80vh", md: "90vh" },
           width: "100vw",
           backgroundColor: theme.palette.primary.light,
           m: 0,
@@ -162,47 +159,41 @@ export default function Hero() {
           container
           sx={{
             justifyContent: "center",
-            maxWidth: "1000px",
+            maxWidth: "1100px",
           }}
         >
-          <>
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              md={6}
-              lg={6}
-              xl={6}
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                pl: "5vw",
-              }}
-            >
-              <IntroText />
-            </Grid>
-            {!isVerySmallScreen ? (
-              <Grid
-                item
-                sm={6}
-                md={6}
-                lg={6}
-                xl={6}
-                sx={{
-                  px: "10vw",
-                  display: "flex",
-                  justifyContent: "flex-end",
-                  alignItems: "flex-end",
-                  flexDirection: "column",
-                }}
-              >
-                <HeadshotImage />
-              </Grid>
-            ) : (
-              ""
-            )}
-          </>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={6}
+            lg={6}
+            xl={6}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              pl: "5vw",
+            }}
+          >
+            <IntroText />
+          </Grid>
+          <Grid
+            item
+            sm={6}
+            md={6}
+            lg={6}
+            xl={6}
+            sx={{
+              px: "10vw",
+              display: { xs: "none", sm: "flex" },
+              justifyContent: "flex-end",
+              alignItems: "flex-end",
+              flexDirection: "column",
+            }}
+          >
+            <HeadshotImage />
+          </Grid>
         </Grid>
       </Box>
     </>

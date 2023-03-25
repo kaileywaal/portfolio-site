@@ -31,8 +31,9 @@ export default function Project({
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          py: 6,
-          px: 4,
+          py: { xs: 6, xl: 2 },
+          px: { xs: 4, xl: 3 },
+          spacing: 2,
         }}
       >
         <Grid
@@ -43,9 +44,10 @@ export default function Project({
           lg={5}
           xl={6}
           sx={{
-            height: "150px",
-            width: "50%",
+            height: { xs: "250px", sm: "175px" },
+            //width: "50%",
             textAlign: "center",
+            pb: { xs: 2, sm: 0 },
           }}
         >
           {image}
@@ -62,7 +64,7 @@ export default function Project({
               />
             ))}
           </Stack>
-          <Typography variant="h5" sx={{ pb: 0.3 }}>
+          <Typography variant="h5" sx={{ pb: 1 }}>
             {title}
           </Typography>
           <Typography variant="body1">{description}</Typography>

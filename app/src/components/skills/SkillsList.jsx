@@ -3,14 +3,14 @@ import Skill from "./Skill";
 import { Box, Container } from "@mui/system";
 import { useTheme } from "@mui/material/styles";
 import { Typography } from "@mui/material";
-import ReactIcon from "../../assets/icons/ReactIcon";
-import HtmlIcon from "../../assets/icons/HtmlIcon";
-import JavaScriptIcon from "../../assets/icons/JavaScriptIcon";
-import CssIcon from "../../assets/icons/CssIcon";
-import GitIcon from "../../assets/icons/GitIcon";
-import TypeScriptIcon from "../../assets/icons/TypeScriptIcon";
-import MaterialUiIcon from "../../assets/icons/MaterialUiIcon";
-import VueIcon from "../../assets/icons/VueIcon";
+import ReactIcon from "../../assets/skillIcons/ReactIcon";
+import HtmlIcon from "../../assets/skillIcons/HtmlIcon";
+import JavaScriptIcon from "../../assets/skillIcons/JavaScriptIcon";
+import CssIcon from "../../assets/skillIcons/CssIcon";
+import GitIcon from "../../assets/skillIcons/GitIcon";
+import TypeScriptIcon from "../../assets/skillIcons/TypeScriptIcon";
+import MaterialUiIcon from "../../assets/skillIcons/MaterialUiIcon";
+import VueIcon from "../../assets/skillIcons/VueIcon";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
@@ -48,6 +48,9 @@ export default function SkillsList() {
         responsive={{
           0: {
             items: 3,
+          },
+          600: {
+            items: 5,
           },
           800: {
             items: 7,
