@@ -2,7 +2,10 @@ export const projectsList = [
   {
     title: "Faith Family Empowerment Center",
     languages: ["HTML", "CSS", "JavaScript"],
-    links: [{ label: "view site", link: "https://ffec.github.io/ffec-site/" }],
+    links: [
+      { label: "view site", link: "https://ffec.github.io/ffec-site/" },
+      { label: "view code", link: "https://github.com/kaileywaal/ffec" },
+    ],
     description:
       "Faith Family Empowerment Center is a nonprofit that had a website in need of a little facelift... or an entire overhaul. We sent their old, desktop-only site to the grave and replaced it with a fully responsive site that looks great on any device.",
     image: (
@@ -20,6 +23,10 @@ export const projectsList = [
       {
         label: "view demo",
         link: "https://drive.google.com/file/d/1vrwgRWeV6iMRiGs8Cm8LpgpCe2_BmE2Z/view",
+      },
+      {
+        label: "view code",
+        link: "https://github.com/kaileywaal/virtual-stock-market",
       },
     ],
     description:
@@ -40,6 +47,10 @@ export const projectsList = [
         label: "view site",
         link: "https://kaileywaal.github.io/ip-address-tracker-hub/",
       },
+      {
+        label: "view code",
+        link: "https://github.com/kaileywaal/ip-address-tracker-hub",
+      },
     ],
     description:
       "Figure out all the dirty details that you need to know based on an IP address or domain. You can see your IP address and location on a map when the page loads (you know, in case you forget where you are) or stalk a company and figure out super interesting information about them like, um, their IP address.",
@@ -57,8 +68,12 @@ export const projectsList = [
     links: [
       {
         label: "view site",
-        //TODO
+        //TODO: update link
         link: "https://kaileywaal.com",
+      },
+      {
+        label: "view code",
+        link: "https://github.com/kaileywaal/kaileywaal",
       },
     ],
     description:

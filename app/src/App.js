@@ -10,6 +10,7 @@ import Projects from "./components/projects/Projects";
 import About from "./components/about/About";
 import LinksSidebar from "./components/linksSidebar/LinksSidebar";
 import { Box } from "@mui/material";
+import Contact from "./components/contact/Contact";
 
 let colorTheme = createTheme({
   palette: {
@@ -123,6 +124,7 @@ function App() {
         <SkillsList />
         <Projects />
       </Box>
+      <Contact />
     </ThemeProvider>
   );
 }

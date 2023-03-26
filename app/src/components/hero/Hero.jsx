@@ -6,6 +6,7 @@ import { Button } from "@mui/material";
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
+import EmailIcon from "@mui/icons-material/Email";
 import "./hero.css";
 
 export default function Hero() {
@@ -117,9 +118,10 @@ export default function Hero() {
       </Typography>
       <Button
         variant="contained"
-        sx={{ maxWidth: "200px", mt: 2 }}
+        sx={{ mt: 2, maxWidth: "190px" }}
         onClick={() => (window.location = "mailto:kaileynwaal@gmail.com")}
       >
+        <EmailIcon sx={{ pr: 1 }} />
         Contact Me
       </Button>
     </>

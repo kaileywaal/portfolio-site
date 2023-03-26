@@ -8,6 +8,9 @@ import {
   Paper,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
+import LaptopIcon from "@mui/icons-material/Laptop";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function Project({
   title,
@@ -39,21 +42,20 @@ export default function Project({
         <Grid
           item
           xs={12}
-          sm={6}
+          sm={12}
           md={5}
           lg={5}
           xl={6}
           sx={{
-            height: { xs: "250px", sm: "175px" },
-            //width: "50%",
+            height: { xs: "250px", md: "200px", lg: "250px" },
             textAlign: "center",
-            pb: { xs: 2, sm: 0 },
+            pb: { xs: 2, md: 0 },
           }}
         >
           {image}
         </Grid>
 
-        <Grid item xs={12} sm={6} md={7} lg={7} xl={6}>
+        <Grid item xs={12} sm={12} md={7} lg={7} xl={6}>
           <Stack direction="row" sx={{ display: "flex", flexWrap: "wrap" }}>
             {languages.map((language) => (
               <Chip
@@ -79,10 +81,18 @@ export default function Project({
               return (
                 <Button
                   href={link.link}
-                  variant="contained"
+                  variant={
+                    link.label === "view code" ? "outlined" : "contained"
+                  }
+                  size="small"
                   target="_blank"
                   sx={{ mt: 2, mr: 1 }}
                 >
+                  {link.label === "view demo" && (
+                    <OndemandVideoIcon sx={{ pr: 1 }} />
+                  )}
+                  {link.label === "view site" && <LaptopIcon sx={{ pr: 1 }} />}
+                  {link.label === "view code" && <GitHubIcon sx={{ pr: 1 }} />}
                   {link.label}
                 </Button>
               );
