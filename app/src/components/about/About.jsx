@@ -8,7 +8,7 @@ export default function About() {
 
   return (
     <Container sx={{ pt: 6 }}>
-      <Grid container>
+      <Grid container sx={{ px: 2 }}>
         <Grid
           item
           spacing={2}
@@ -19,18 +19,17 @@ export default function About() {
           xl={6}
           sx={{
             display: "flex",
-
             alignItems: "center",
           }}
         >
           <Box
             sx={{
-              pl: 6,
+              pl: { xs: 4, sm: 6 },
               pb: 2,
               borderLeft: `4px solid ${theme.palette.primary.main}`,
             }}
           >
-            <Box sx={{ pb: 2 }}>
+            <Box sx={{ pb: { xs: 1, sm: 2 } }}>
               <QuoteIcon size={50} color={theme.palette.primary.main} />
             </Box>
             <Typography variant="h6" sx={{ pb: 2 }}>

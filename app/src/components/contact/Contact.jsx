@@ -125,7 +125,7 @@ export default function Contact() {
 
   return (
     <Container>
-      <Grid container sx={{ p: { xs: 4, md: 8 }, maxWidth: "1200px" }}>
+      <Grid container sx={{ p: { xs: 2, md: 8 }, maxWidth: "1200px" }}>
         <Grid item xs={12} md={4}>
           <Typography variant="h3" sx={{ pb: 4 }}>
             Contact Me

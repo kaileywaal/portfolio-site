@@ -8,7 +8,13 @@ export default function Footer() {
 
   return (
     <Box sx={{ backgroundColor: theme.palette.primary.light }}>
-      <Container sx={{ display: "flex", justifyContent: "center", py: 3 }}>
+      <Container
+        sx={{
+          display: "flex",
+          py: 3,
+          maxWidth: "1200px",
+        }}
+      >
         <Typography>
           © Kailey Waal 2023. Built with
           <Tooltip title="React">
@@ -24,6 +30,7 @@ export default function Footer() {
               <MaterialUiIcon size="16px" />
             </Box>
           </Tooltip>
+          .
         </Typography>
       </Container>
     </Box>

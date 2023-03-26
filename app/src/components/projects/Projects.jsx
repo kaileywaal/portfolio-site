@@ -5,7 +5,7 @@ import { projectsList } from "../../data/projects";
 
 export default function Projects() {
   return (
-    <Box sx={{ px: { xs: 3, md: 6 }, mb: 3 }}>
+    <Box sx={{ px: { xs: 2, md: 6 }, mb: 3 }}>
       <Container sx={{ display: "flex", flexDirection: "column" }}>
         {projectsList.map((project, index) => {
           return (

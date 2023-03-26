@@ -47,7 +47,7 @@ export default function Project({
           lg={5}
           xl={6}
           sx={{
-            height: { xs: "200px", md: "200px", lg: "250px" },
+            height: { xs: "200px", sm: "250px", md: "200px", lg: "250px" },
             textAlign: "center",
             pb: { xs: 2, md: 0 },
           }}
@@ -66,15 +66,18 @@ export default function Project({
               />
             ))}
           </Stack>
-          <Typography variant="h5" sx={{ py: 1 }}>
+          <Typography variant="h5" sx={{ py: 2 }}>
             {title}
           </Typography>
-          <Typography variant="body1">{description}</Typography>
+          <Typography variant="body1" sx={{ mb: 2 }}>
+            {description}
+          </Typography>
 
           <Box
             sx={{
               display: "flex",
               flexDirection: "row",
+              flexWrap: "wrap",
             }}
           >
             {links.map((link) => {
@@ -86,7 +89,7 @@ export default function Project({
                   }
                   size="small"
                   target="_blank"
-                  sx={{ mt: 2, mr: 1 }}
+                  sx={{ mt: 1, mr: 1, flexGrow: { xs: 1, sm: 0 } }}
                 >
                   {link.label === "view demo" && (
                     <OndemandVideoIcon sx={{ pr: 1 }} />
