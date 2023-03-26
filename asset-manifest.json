@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio-site/static/css/main.145600a2.css",
-    "main.js": "/portfolio-site/static/js/main.33da246a.js",
-    "static/media/ffec-preview.gif": "/portfolio-site/static/media/ffec-preview.cb6bc18270fcf00d3d10.gif",
-    "static/media/me.png": "/portfolio-site/static/media/me.8d4a0e70c0ab1082fc2b.png",
-    "static/media/portfolio-site-preview.gif": "/portfolio-site/static/media/portfolio-site-preview.d8d7bfdb8dee71624d23.gif",
-    "static/media/virtual-stock-market-preview.gif": "/portfolio-site/static/media/virtual-stock-market-preview.eabaf5f5c4ed6dfef481.gif",
-    "static/media/ip-address-tracker-preview.png": "/portfolio-site/static/media/ip-address-tracker-preview.d81a23d45e713472ddc9.png",
-    "static/media/flower5-svgrepo-com.png": "/portfolio-site/static/media/flower5-svgrepo-com.5fbc029f1cdf5dd185fd.png",
-    "static/media/shape11-svgrepo-com.png": "/portfolio-site/static/media/shape11-svgrepo-com.bdef7d2a34febd359fb4.png",
-    "static/media/shape10-svgrepo-com.png": "/portfolio-site/static/media/shape10-svgrepo-com.e1d527c9cd555f7fd8fa.png",
-    "static/media/shape4-svgrepo-com.png": "/portfolio-site/static/media/shape4-svgrepo-com.2227c4b6018fee338b66.png",
-    "static/media/shape9-svgrepo-com.png": "/portfolio-site/static/media/shape9-svgrepo-com.6165125002c5564e2ad6.png",
-    "static/media/shape1-svgrepo-com.png": "/portfolio-site/static/media/shape1-svgrepo-com.4361e782e11d14f788b1.png",
-    "static/media/shape12-svgrepo-com.png": "/portfolio-site/static/media/shape12-svgrepo-com.ac7747e87cc7a1f2ac1c.png",
-    "static/media/shape3-svgrepo-com.png": "/portfolio-site/static/media/shape3-svgrepo-com.d1476b70cc9bf0a4d1af.png",
-    "static/media/shape6-svgrepo-com.png": "/portfolio-site/static/media/shape6-svgrepo-com.e629dffac1679786db79.png",
-    "index.html": "/portfolio-site/index.html",
-    "main.145600a2.css.map": "/portfolio-site/static/css/main.145600a2.css.map",
-    "main.33da246a.js.map": "/portfolio-site/static/js/main.33da246a.js.map"
+    "main.css": "/static/css/main.145600a2.css",
+    "main.js": "/static/js/main.19814a9d.js",
+    "static/media/ffec-preview.gif": "/static/media/ffec-preview.cb6bc18270fcf00d3d10.gif",
+    "static/media/me.png": "/static/media/me.8d4a0e70c0ab1082fc2b.png",
+    "static/media/portfolio-site-preview.gif": "/static/media/portfolio-site-preview.d8d7bfdb8dee71624d23.gif",
+    "static/media/virtual-stock-market-preview.gif": "/static/media/virtual-stock-market-preview.eabaf5f5c4ed6dfef481.gif",
+    "static/media/ip-address-tracker-preview.png": "/static/media/ip-address-tracker-preview.d81a23d45e713472ddc9.png",
+    "static/media/flower5-svgrepo-com.png": "/static/media/flower5-svgrepo-com.5fbc029f1cdf5dd185fd.png",
+    "static/media/shape11-svgrepo-com.png": "/static/media/shape11-svgrepo-com.bdef7d2a34febd359fb4.png",
+    "static/media/shape10-svgrepo-com.png": "/static/media/shape10-svgrepo-com.e1d527c9cd555f7fd8fa.png",
+    "static/media/shape4-svgrepo-com.png": "/static/media/shape4-svgrepo-com.2227c4b6018fee338b66.png",
+    "static/media/shape9-svgrepo-com.png": "/static/media/shape9-svgrepo-com.6165125002c5564e2ad6.png",
+    "static/media/shape1-svgrepo-com.png": "/static/media/shape1-svgrepo-com.4361e782e11d14f788b1.png",
+    "static/media/shape12-svgrepo-com.png": "/static/media/shape12-svgrepo-com.ac7747e87cc7a1f2ac1c.png",
+    "static/media/shape3-svgrepo-com.png": "/static/media/shape3-svgrepo-com.d1476b70cc9bf0a4d1af.png",
+    "static/media/shape6-svgrepo-com.png": "/static/media/shape6-svgrepo-com.e629dffac1679786db79.png",
+    "index.html": "/index.html",
+    "main.145600a2.css.map": "/static/css/main.145600a2.css.map",
+    "main.19814a9d.js.map": "/static/js/main.19814a9d.js.map"
   },
   "entrypoints": [
     "static/css/main.145600a2.css",
-    "static/js/main.33da246a.js"
+    "static/js/main.19814a9d.js"
   ]
 }
