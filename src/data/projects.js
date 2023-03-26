@@ -68,8 +68,7 @@ export const projectsList = [
     links: [
       {
         label: "view site",
-        //TODO: update link
-        link: "https://kaileywaal.com",
+        link: "https://kaileywaal.github.io/kaileywaal/",
       },
       {
         label: "view code",
