@@ -1,6 +1,7 @@
 import { Typography, Container, Grid, Box } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import QuoteIcon from "../../assets/QuoteIcon";
+import DownloadResumeButton from "../DownloadResumeButton";
 
 export default function About() {
   const theme = useTheme();
@@ -81,6 +82,7 @@ export default function About() {
             And every time the computer translates my code into pixels on the
             screen, I still get excited. Because it is still really, REALLY fun.
           </Typography>
+          <DownloadResumeButton />
         </Grid>
       </Grid>
     </Container>

@@ -17,6 +17,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import DescriptionIcon from "@mui/icons-material/Description";
 import SendIcon from "@mui/icons-material/Send";
 import emailjs from "@emailjs/browser";
+import DownloadResumeButton from "../DownloadResumeButton";
 
 export default function Contact() {
   const SERVICE_ID = "portfolio_contact_form";
@@ -147,16 +148,7 @@ export default function Contact() {
               <EmailIcon sx={{ width: 30, height: 30 }} />
             </SocialLink>
           </Box>
-          <Button
-            sx={{ my: 2 }}
-            component="a"
-            variant="outlined"
-            href="../../assets/resume.pdf"
-            download
-          >
-            <DescriptionIcon sx={{ pr: 1 }} />
-            Download Resume
-          </Button>
+          <DownloadResumeButton />
         </Grid>
         <Grid component="form" item xs={12} md={8}>
           {displaySubmissionMessage && response && <SubmitMessage />}
