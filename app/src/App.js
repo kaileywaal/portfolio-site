@@ -82,6 +82,11 @@ let theme = createTheme(colorTheme, {
           fontSize: "0.8rem",
           fontFamily: ["Poppins", "sans-serif"].join(","),
           transition: "0.4s",
+          "&.Mui-disabled": {
+            backgroundColor: colorTheme.palette.primary.main,
+            color: colorTheme.palette.secondary.light,
+            opacity: 0.6,
+          },
         },
         contained: {
           color: colorTheme.palette.primary.light,
@@ -89,7 +94,7 @@ let theme = createTheme(colorTheme, {
         outlined: {
           border: "2px solid",
           "&:hover": {
-            border: "2px solid",
+            border: `2px solid ${colorTheme.palette.primary.main}`,
             backgroundColor: colorTheme.palette.primary.main,
             color: colorTheme.palette.secondary.light,
           },

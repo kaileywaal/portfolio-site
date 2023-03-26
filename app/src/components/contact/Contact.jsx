@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Box } from "@mui/system";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import {
@@ -8,13 +8,14 @@ import {
   Grid,
   Button,
   Container,
+  Alert,
+  Tooltip,
 } from "@mui/material";
 import Link from "@mui/material/Link";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import DescriptionIcon from "@mui/icons-material/Description";
 import SendIcon from "@mui/icons-material/Send";
-import axios from "axios";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
@@ -27,8 +28,9 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [response, setResponse] = useState(null);
-
-  const emailJsUrl = "https://api.emailjs.com/api/v1.0/email/send";
+  const [displaySubmissionMessage, setDisplaySubmissionMessage] =
+    useState(false);
+  const [verifyForm, setVerifyForm] = useState(false);
 
   const handleChangeEmail = (event) => {
     setEmail(event.target.value);
@@ -49,13 +51,59 @@ export default function Contact() {
       from_email: email,
     };
 
-    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY).then(
-      (result) => {
-        setResponse(result.text);
-      },
-      (error) => {
-        setResponse(error.text);
-      }
+    emailjs
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
+      .then(
+        (result) => {
+          setResponse(result.text);
+          clearForm();
+        },
+        (error) => {
+          setResponse(error.text);
+        }
+      )
+      .then(setDisplaySubmissionMessage(true));
+  };
+
+  const clearForm = () => {
+    setEmail("");
+    setMessage("");
+    setName("");
+  };
+
+  const checkVerify = () => {
+    const messageIsValid = message !== "";
+    const nameIsValid = name !== "";
+    const emailIsValid = checkIsValidEmail();
+
+    setVerifyForm(messageIsValid && nameIsValid && emailIsValid);
+  };
+
+  const checkIsValidEmail = () => {
+    let emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]+$/i;
+    const emailIsValid = email !== "" && emailRegex.test(email);
+    return emailIsValid;
+  };
+
+  useEffect(() => {
+    checkVerify();
+  }, [message, email, name]);
+
+  const SubmitMessage = () => {
+    return response === "OK" ? (
+      <Alert severity="success" sx={{ mb: 1 }}>
+        <Typography>
+          Woo! I can't wait to read your message — I'll get back to you ASAP.
+        </Typography>
+      </Alert>
+    ) : (
+      <Alert severity="error" sx={{ mb: 1 }}>
+        <Typography>
+          {`Uh oh. Something went wrong — sorry about that! You can send me an email `}
+          <Link href="mailto: kaileynwaal@gmail.com">here</Link>
+          {` instead`}
+        </Typography>
+      </Alert>
     );
   };
 
@@ -111,8 +159,9 @@ export default function Contact() {
           </Button>
         </Grid>
         <Grid component="form" item xs={12} md={8}>
+          {displaySubmissionMessage && response && <SubmitMessage />}
           <TextField
-            sx={{ my: 0.5 }}
+            sx={{ my: 1 }}
             required
             label="Name"
             type="text"
@@ -121,16 +170,16 @@ export default function Contact() {
             value={name}
           />
           <TextField
-            sx={{ my: 0.5 }}
+            sx={{ my: 1 }}
             required
             label="Email"
-            type="email"
+            type={"email"}
             value={email}
             fullWidth
             onChange={handleChangeEmail}
           />
           <TextField
-            sx={{ my: 0.5 }}
+            sx={{ my: 1 }}
             required
             label="Message"
             type="text"
@@ -140,14 +189,27 @@ export default function Contact() {
             fullWidth
             onChange={handleChangeMessage}
           />
-          <Button
-            variant="contained"
-            sx={{ maxWidth: "200px", mt: 2 }}
-            onClick={handleSendMessage}
+          <Tooltip
+            sx={{ pt: 2 }}
+            placement="top"
+            title={
+              !checkIsValidEmail() && email !== ""
+                ? "Please enter a valid email address."
+                : !verifyForm && "Please fill out the required fields."
+            }
           >
-            <SendIcon sx={{ pr: 1 }} />
-            Send Message
-          </Button>
+            <span>
+              <Button
+                variant="contained"
+                disabled={!verifyForm}
+                sx={{ maxWidth: "200px", mt: 2 }}
+                onClick={handleSendMessage}
+              >
+                <SendIcon sx={{ pr: 1 }} />
+                Send Message
+              </Button>
+            </span>
+          </Tooltip>
         </Grid>
       </Grid>
     </Container>
