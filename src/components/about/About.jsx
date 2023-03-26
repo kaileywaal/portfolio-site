@@ -8,10 +8,9 @@ export default function About() {
 
   return (
     <Container sx={{ pt: 6 }}>
-      <Grid container sx={{ px: 2 }}>
+      <Grid container sx={{ px: 2 }} spacing={2}>
         <Grid
           item
-          spacing={2}
           xs={12}
           sm={12}
           md={6}
@@ -77,9 +76,10 @@ export default function About() {
             thought "huh, that's actually REALLY fun."
           </Typography>
           <Typography sx={{ pb: 2 }}>
-            Fastforwrd to today and everyday I get to write code for a living.
-            And every time the computer translates my code into pixels on the
-            screen, I still get excited. Because it is still really, REALLY fun.
+            Fast forward to today and every day I get to write code for a
+            living. And every time the computer translates my code into pixels
+            on the screen, I still get excited. Because it is still really,
+            REALLY fun.
           </Typography>
           <DownloadResumeButton />
         </Grid>

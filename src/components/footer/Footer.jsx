@@ -1,7 +1,7 @@
 import { Typography, Container, Tooltip, Box } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import MaterialUiIcon from "../../../assets/skillIcons/MaterialUiIcon";
-import ReactIcon from "../../../assets/skillIcons/ReactIcon";
+import MaterialUiIcon from "../../assets/skillIcons/MaterialUiIcon";
+import ReactIcon from "../../assets/skillIcons/ReactIcon";
 
 export default function Footer() {
   const theme = useTheme();

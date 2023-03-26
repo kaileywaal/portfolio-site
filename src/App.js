@@ -11,7 +11,7 @@ import About from "./components/about/About";
 import LinksSidebar from "./components/linksSidebar/LinksSidebar";
 import { Box } from "@mui/material";
 import Contact from "./components/contact/Contact";
-import Footer from "./components/about/footer/Footer";
+import Footer from "./components/footer/Footer";
 
 let colorTheme = createTheme({
   palette: {
