@@ -39,7 +39,7 @@ export default function Project({
         <Grid
           item
           xs={12}
-          sm={5}
+          sm={6}
           md={5}
           lg={5}
           xl={6}
@@ -53,18 +53,18 @@ export default function Project({
           {image}
         </Grid>
 
-        <Grid item xs={12} sm={7} md={7} lg={7} xl={6}>
+        <Grid item xs={12} sm={6} md={7} lg={7} xl={6}>
           <Stack direction="row" sx={{ display: "flex", flexWrap: "wrap" }}>
             {languages.map((language) => (
               <Chip
-                sx={{ mr: 1, my: { xs: 0.75, md: 1 } }}
+                sx={{ mr: 0.75, my: 0.5 }}
                 label={language}
                 variant="contained"
                 size="small"
               />
             ))}
           </Stack>
-          <Typography variant="h5" sx={{ pb: 1 }}>
+          <Typography variant="h5" sx={{ py: 1 }}>
             {title}
           </Typography>
           <Typography variant="body1">{description}</Typography>

@@ -8,6 +8,8 @@ import {
 } from "@mui/material/styles";
 import Projects from "./components/projects/Projects";
 import About from "./components/about/About";
+import LinksSidebar from "./components/linksSidebar/LinksSidebar";
+import { Box } from "@mui/material";
 
 let colorTheme = createTheme({
   palette: {
@@ -113,10 +115,13 @@ theme = responsiveFontSizes(theme);
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <LinksSidebar />
       <Hero />
-      <About />
-      <SkillsList />
-      <Projects />
+      <Box sx={{ px: { xs: 0, sm: 4 } }}>
+        <About />
+        <SkillsList />
+        <Projects />
+      </Box>
     </ThemeProvider>
   );
 }
