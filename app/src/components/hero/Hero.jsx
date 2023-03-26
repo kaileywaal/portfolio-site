@@ -150,7 +150,7 @@ export default function Hero() {
           justifyContent: "center",
           alignContent: "center",
           height: { xs: "80vh", md: "90vh" },
-          width: "100vw",
+          width: "100%",
           backgroundColor: theme.palette.primary.light,
           m: 0,
           p: 0,

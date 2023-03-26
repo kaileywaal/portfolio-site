@@ -47,7 +47,7 @@ export default function Project({
           lg={5}
           xl={6}
           sx={{
-            height: { xs: "250px", md: "200px", lg: "250px" },
+            height: { xs: "200px", md: "200px", lg: "250px" },
             textAlign: "center",
             pb: { xs: 2, md: 0 },
           }}

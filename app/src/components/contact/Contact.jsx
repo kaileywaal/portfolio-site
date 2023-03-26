@@ -14,7 +14,6 @@ import {
 import Link from "@mui/material/Link";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
-import DescriptionIcon from "@mui/icons-material/Description";
 import SendIcon from "@mui/icons-material/Send";
 import emailjs from "@emailjs/browser";
 import DownloadResumeButton from "../DownloadResumeButton";
@@ -177,7 +176,7 @@ export default function Contact() {
             type="text"
             value={message}
             multiline
-            rows={4}
+            rows={5}
             fullWidth
             onChange={handleChangeMessage}
           />
