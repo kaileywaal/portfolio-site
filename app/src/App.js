@@ -80,6 +80,7 @@ let theme = createTheme(colorTheme, {
           padding: "8px 1.4rem",
           fontSize: "0.8rem",
           fontFamily: ["Poppins", "sans-serif"].join(","),
+          transition: "0.4s",
         },
         contained: {
           color: colorTheme.palette.primary.light,

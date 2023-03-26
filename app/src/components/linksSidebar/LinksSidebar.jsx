@@ -82,6 +82,7 @@ export default function LinksSidebar() {
             color: theme.palette.primary.main,
             px: 2,
             py: 1.5,
+            transition: "0.4s",
             "&:hover": { color: theme.palette.primary.dark },
           }}
         />
@@ -92,6 +93,7 @@ export default function LinksSidebar() {
             color: theme.palette.primary.main,
             px: 2,
             py: 1.5,
+            transition: "0.4s",
             "&:hover": { color: theme.palette.primary.dark },
           }}
         />
@@ -102,6 +104,7 @@ export default function LinksSidebar() {
             color: theme.palette.primary.main,
             px: 2,
             py: 1.5,
+            transition: "0.4s",
             "&:hover": { color: theme.palette.primary.dark },
           }}
         />
