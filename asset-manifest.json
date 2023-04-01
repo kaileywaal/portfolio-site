@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.145600a2.css",
-    "main.js": "/static/js/main.589b6ec7.js",
+    "main.js": "/static/js/main.70bc3042.js",
     "static/media/ffec-preview.gif": "/static/media/ffec-preview.cb6bc18270fcf00d3d10.gif",
     "static/media/me.png": "/static/media/me.8d4a0e70c0ab1082fc2b.png",
     "static/media/portfolio-site-preview.gif": "/static/media/portfolio-site-preview.d8d7bfdb8dee71624d23.gif",
     "static/media/virtual-stock-market-preview.gif": "/static/media/virtual-stock-market-preview.eabaf5f5c4ed6dfef481.gif",
+    "static/media/todo-list-preview.gif": "/static/media/todo-list-preview.8855999eee097ef1ec4a.gif",
     "static/media/ip-address-tracker-preview.png": "/static/media/ip-address-tracker-preview.d81a23d45e713472ddc9.png",
     "static/media/flower5-svgrepo-com.png": "/static/media/flower5-svgrepo-com.5fbc029f1cdf5dd185fd.png",
     "static/media/shape11-svgrepo-com.png": "/static/media/shape11-svgrepo-com.bdef7d2a34febd359fb4.png",
@@ -18,10 +19,10 @@
     "static/media/shape6-svgrepo-com.png": "/static/media/shape6-svgrepo-com.e629dffac1679786db79.png",
     "index.html": "/index.html",
     "main.145600a2.css.map": "/static/css/main.145600a2.css.map",
-    "main.589b6ec7.js.map": "/static/js/main.589b6ec7.js.map"
+    "main.70bc3042.js.map": "/static/js/main.70bc3042.js.map"
   },
   "entrypoints": [
     "static/css/main.145600a2.css",
-    "static/js/main.589b6ec7.js"
+    "static/js/main.70bc3042.js"
   ]
 }
