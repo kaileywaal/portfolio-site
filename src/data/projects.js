@@ -85,4 +85,27 @@ export const projectsList = [
       />
     ),
   },
+  {
+    title: "To Do List",
+    languages: ["HTML", "CSS", "JavaScript"],
+    links: [
+      {
+        label: "view site",
+        link: "https://kaileywaal.github.io/todo-app/",
+      },
+      {
+        label: "view code",
+        link: "https://github.com/kaileywaal/todo-app",
+      },
+    ],
+    description:
+      "Just like your regular to-do list, but make it ~cute~. Easily add items to your list, switch to dark mode to stop blinding yourself at night, view only completed or active tasks, and clear all completed tasks with a click of a button.",
+    image: (
+      <img
+        src={require("../../src/assets/previewImages/todo-list-preview.gif")}
+        alt="A screenshot and video of site displayed on phone and laptop"
+        height="100%"
+      />
+    ),
+  },
 ];
