@@ -68,7 +68,7 @@ export default function About() {
           </Typography>
           <Typography sx={{ pb: 2 }}>
             ...but then in February of 2020 I wrote and styled my first "Hello
-            World" on freeCodeCamp and I though "huh, that's actually kinda
+            World" on freeCodeCamp and I thought "huh, that's actually kinda
             fun".
           </Typography>
           <Typography sx={{ pb: 2 }}>
