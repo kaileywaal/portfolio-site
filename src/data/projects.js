@@ -1,5 +1,22 @@
 export const projectsList = [
   {
+    title: "Kozukai",
+    languages: ["React", "Material UI", "RESTful API"],
+    links: [
+      { label: "view site", link: "https://kozukai.vercel.app" },
+      { label: "view code", link: "https://github.com/kaileywaal/kozukai" },
+    ],
+    description:
+      "Reward (AKA bribe) yourself to get the things that matter most done.",
+    image: (
+      <img
+        src={require("../../src/assets/previewImages/kozukai-preview.gif")}
+        alt="Screen recording of the responsive web app"
+        height="100%"
+      />
+    ),
+  },
+  {
     title: "Faith Family Empowerment Center",
     languages: ["HTML", "CSS", "JavaScript"],
     links: [
