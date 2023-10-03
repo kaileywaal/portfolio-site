@@ -127,14 +127,14 @@ export default function Hero() {
     </>
   );
 
-  const HeadshotImage = () => (
-    <img
-      src={require("../../assets/me.png")}
-      alt="professional headshot of Kailey Waal"
-      width="100%"
-      style={{ maxWidth: "450px", zIndex: 1 }}
-    />
-  );
+  // const HeadshotImage = () => (
+  //   <img
+  //     src={require("../../assets/me.png")}
+  //     alt="professional headshot of Kailey Waal"
+  //     width="100%"
+  //     style={{ maxWidth: "450px", zIndex: 1 }}
+  //   />
+  // );
 
   return (
     <>
@@ -193,9 +193,7 @@ export default function Hero() {
               alignItems: "flex-end",
               flexDirection: "column",
             }}
-          >
-            <HeadshotImage />
-          </Grid>
+          ></Grid>
         </Grid>
       </Box>
     </>

@@ -3,7 +3,7 @@ export const projectsList = [
     title: "Kozukai",
     languages: ["React", "Material UI", "RESTful API"],
     links: [
-      { label: "view site", link: "https://kozukai.vercel.app" },
+      // { label: "view site", link: "https://kozukai.vercel.app" },
       { label: "view code", link: "https://github.com/kaileywaal/kozukai" },
     ],
     description:

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Button } from "@mui/material";
 
 import DescriptionIcon from "@mui/icons-material/Description";
@@ -9,7 +9,7 @@ export default function DownloadResumeButton() {
       sx={{ my: 2 }}
       component="a"
       variant="outlined"
-      href="https://drive.google.com/file/d/1nkY43O0smEgHwg9kqfhi5U_z2KQi5iDD/view?usp=sharing"
+      href="https://drive.google.com/file/d/17vfUyI5fwXoHRE-EAoPcCR5lRPfIt8bO/view?usp=drive_link"
       target="_blank"
     >
       <DescriptionIcon sx={{ pr: 1 }} />
